@@ -1,5 +1,5 @@
 import com.fun
-def pipe(String name, String number)
+def call(String name, String number)
 {
     obj = new fun()
     pipeline {
