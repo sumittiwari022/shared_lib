@@ -1,5 +1,6 @@
 import com.myfun
 def call(String name, String number) {
+    obj = new Function
     pipeline {
         agent any
 
@@ -8,7 +9,7 @@ def call(String name, String number) {
                 steps {
                     echo 'Hello World'
                     script {
-                        com.myfun.info(name, number)
+                        obj.info(name, number)
                     }
                 }
             }
