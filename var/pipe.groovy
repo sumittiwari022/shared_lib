@@ -1,4 +1,19 @@
-def test(String name, String number)
+import com.fun
+def pipe(String name, String number)
 {
-    echo (My name is ($name) and my number is ($number))
+    obj = new fun()
+    pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                script{
+                    obj.test(name, number)
+                }
+            }
+        }
+    }
+}
 }
