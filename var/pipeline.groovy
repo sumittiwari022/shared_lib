@@ -1,3 +1,4 @@
+import com.myfun
 def call(String name, String number) {
     pipeline {
         agent any
