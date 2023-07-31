@@ -1,7 +1,8 @@
-import com.fun
+import com.myfun.Function
 def call(String name, String number)
 {
-    obj = new fun()
+    object = new Function()
+
     pipeline {
     agent any
 
@@ -10,7 +11,7 @@ def call(String name, String number)
             steps {
                 echo 'Hello World'
                 script{
-                    obj.test(name, number)
+                    obj.info(name, number)
                 }
             }
         }
