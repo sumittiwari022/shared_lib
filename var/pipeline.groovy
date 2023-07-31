@@ -1,4 +1,4 @@
-import com.myfun.Function
+import com.myfun
 def call(String name, String number)
 {
     object = new Function()
