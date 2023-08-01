@@ -1,6 +1,6 @@
-import com.myfun.Utility
-def call(String name, String number) {
-    object = new Utility()
+import com.myfun.packages
+def name_num(String name, String number) {
+    object = new packages()
     pipeline {
         agent any
         stages {
@@ -8,7 +8,7 @@ def call(String name, String number) {
                 steps {
                     echo 'Hello World'
                     script {
-                        object.fun(name, number)
+                        object.name_number(name, number)
                     }
                 }
             }
