@@ -1,6 +1,6 @@
-import com.myfun
+import com.myfun.Utility
 def info(String name, String number) {
-    object = new Utility
+    object = new Utility()
     pipeline {
         agent any
         stages {
