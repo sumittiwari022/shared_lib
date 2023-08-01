@@ -1,10 +1,6 @@
-def call(body) {
-    // Delegates the call to the pipeline block defined in the Jenkinsfile
-    def config = [:]
-    body.resolveStrategy = Closure.DELEGATE_FIRST
-    body.delegate = config
-    body()
-
+import com.myfun
+def info(String name, String number) {
+    object = new Utility
     pipeline {
         agent any
         stages {
@@ -12,7 +8,7 @@ def call(body) {
                 steps {
                     echo 'Hello World'
                     script {
-                        com.myfun.info(config.name, config.number)
+                        object.fun(name, number)
                     }
                 }
             }
