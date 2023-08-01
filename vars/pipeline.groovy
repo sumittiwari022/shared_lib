@@ -1,5 +1,5 @@
 import com.myfun.Utility
-def info(String name, String number) {
+def call(String name, String number) {
     object = new Utility()
     pipeline {
         agent any
