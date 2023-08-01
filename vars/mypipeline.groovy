@@ -1,6 +1,6 @@
-import com.myfun.packages
+import com.myfun.pack
 def name_num(String name, String number) {
-    object = new packages()
+    object = new pack()
     pipeline {
         agent any
         stages {
