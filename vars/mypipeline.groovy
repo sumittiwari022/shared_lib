@@ -1,5 +1,5 @@
 import com.myfun.pack
-def name_num(String name, String number) {
+def call(String name, String number) {
     object = new pack()
     pipeline {
         agent any
